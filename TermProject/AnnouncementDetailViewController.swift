@@ -17,7 +17,6 @@ class AnnouncementDetailViewController: UIViewController {
     @IBOutlet weak var detailTextfield: UITextView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var contactLabel: UILabel!
     
     //Initialize empty Announcement object
     var data = Announcement(date: "", time: "", category: "", message: "", detail: "", contact: "", location: "")
@@ -31,7 +30,6 @@ class AnnouncementDetailViewController: UIViewController {
         self.detailTextfield.text = self.data.Detail
         self.timeLabel.text = self.data.Time
         self.locationLabel.text = self.data.Location
-        self.contactLabel.text = self.data.Contact
     }
     
     

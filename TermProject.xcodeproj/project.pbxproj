@@ -19,6 +19,7 @@
 		79B0D23B1BF151EA00C2D161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B0D2391BF151EA00C2D161 /* LaunchScreen.storyboard */; };
 		79B0D2461BF151EB00C2D161 /* TermProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0D2451BF151EB00C2D161 /* TermProjectTests.swift */; };
 		79B0D2511BF151EB00C2D161 /* TermProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0D2501BF151EB00C2D161 /* TermProjectUITests.swift */; };
+		7E9397D21C08E39C0076D87F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9397D11C08E39C0076D87F /* CalendarViewController.swift */; };
 		84137A2341DE09F8C34D28EC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF55292404DF663D724B3F05 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +112,7 @@
 		79B0D24C1BF151EB00C2D161 /* TermProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TermProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B0D2501BF151EB00C2D161 /* TermProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermProjectUITests.swift; sourceTree = "<group>"; };
 		79B0D2521BF151EB00C2D161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E9397D11C08E39C0076D87F /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		BF55292404DF663D724B3F05 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -200,6 +202,7 @@
 				5731F4101BFDBD0800C4F4AE /* AnnouncementTableViewController.swift */,
 				5731F4121BFEEB1200C4F4AE /* Announcement.swift */,
 				57DAAE321C006E4600DE0674 /* AnnouncementDetailViewController.swift */,
+				7E9397D11C08E39C0076D87F /* CalendarViewController.swift */,
 			);
 			path = TermProject;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9397D21C08E39C0076D87F /* CalendarViewController.swift in Sources */,
 				5731F4131BFEEB1200C4F4AE /* Announcement.swift in Sources */,
 				57DAAE331C006E4600DE0674 /* AnnouncementDetailViewController.swift in Sources */,
 				5731F4091BFD80C900C4F4AE /* SwiftyJSON.swift in Sources */,

@@ -12,13 +12,15 @@ import SwiftyJSON
 
 class AnnouncementTableViewController: UITableViewController{
     
-    @IBOutlet weak var announcementTable: UITableView!
+    
+    @IBOutlet var announcementTable: UITableView!
     
     //Array of Announcement objects to hold return data from GET request
     var announcements = [Announcement]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        announcementTable.backgroundView = UIImageView(image: UIImage(named: "bcit01"))
         
         getData()
     }
@@ -47,7 +49,7 @@ class AnnouncementTableViewController: UITableViewController{
                             )
                             
                             self.announcements.append(oneAnnouncement)
-                            print(self.announcements)
+                           
                             self.tableView.reloadData()
                         }
                     }
@@ -88,15 +90,13 @@ class AnnouncementTableViewController: UITableViewController{
         
         let announcement = self.announcements[indexPath.row]
         
-        //The background colour selector is based on which category the announcement falls into
-        switch announcement.Category {
-        case "Campus":
-            cell.backgroundColor = UIColor(red: 203/255, green: 234/255, blue: 239/255, alpha: 0.4)
-        case "Course":
-            cell.backgroundColor = UIColor(red: 253/255, green: 214/255, blue: 214/255, alpha: 0.4)
-        default:
-            cell.backgroundColor = UIColor.whiteColor()
-        }
+        //Set selected background colour of tableview cells
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor(red: 225/255, green: 225/255, blue: 102/255, alpha: 0.8)
+        cell.selectedBackgroundView = bgColorView
+        
+        //Set background colour of tableview cells
+        cell.backgroundColor = UIColor(red: 225/255, green: 225/255, blue: 225/255, alpha: 0.8)
         
         //Setting label text
         cell.dateLabel.text = announcement.Date
